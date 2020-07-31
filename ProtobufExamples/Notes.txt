@@ -1,0 +1,23 @@
+
+Download protobuf:
+* https://github.com/protocolbuffers/protobuf/releases scroll down to: e.g. 'protoc-3.12.4-win64'..
+..this is a full version of the protoc tool, compiler etc.
+
+* Extract, put it in a good place and add .exe to PATH.
+
+* cmd> protoc -help
+
+Google tutorial C#
+* https://developers.google.com/protocol-buffers/docs/csharptutorial
+* protoc -I=$SRC_DIR --csharp_out=$DST_DIR $SRC_DIR/person.proto
+> protoc -I=. --csharp_out=. ./person.proto
+* Add existing item.
+
+"This generates Addressbook.cs in your specified destination directory.
+To compile this code, you'll need a project with a reference to the Google.Protobuf assembly."
+* Install Nuget-> Google.Protobuf
+
+* add using directives to Program.cs for generated class form compiler (if namespace if different), and dll Google.Protobuf.
+
+
+
